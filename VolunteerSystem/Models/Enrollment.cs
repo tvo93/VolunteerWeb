@@ -16,12 +16,12 @@ namespace VolunteerSystem.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime EnrollmentDate { get; set; }
-        public virtual Job Job { get; set; }
+        public virtual Job Jobs { get; set; }
 
         // add job status for volunteer
        
         // public String Status { get; set; }
-        public virtual Volunteer Volunteer { get; set; }
+        public virtual Volunteer Volunteers { get; set; }
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

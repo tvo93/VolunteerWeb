@@ -14,10 +14,12 @@ namespace VolunteerSystem.DAL
             public DbSet<Volunteer> Volunteers { get; set; }
             public DbSet<Enrollment> Enrollments { get; set; }
             public DbSet<Job> Jobs { get; set; }
+        public DbSet<Event> Events { get; set; }
 
-            protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
             {
                 modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            }
+           
+        }
         }
 }

@@ -54,56 +54,55 @@ namespace VolunteerSystem.Migrations
             var enrollments = new List<Enrollment>
             {
                 new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Alexander").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Alexander").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Administration" ).JobID,
                    EnrollmentDate = DateTime.Parse("2010-09-01").Date,
                 },
                  new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Alexander").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Alexander").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Food deliveries" ).JobID,
                 EnrollmentDate = DateTime.Parse("2012-09-01").Date,
                  },
                  new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Alexander").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Alexander").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Phone bank" ).JobID,
                        EnrollmentDate = DateTime.Parse("2013-09-01").Date,
                  },
                  new Enrollment {
-                     VolunteerID = volunteers.Single(s => s.LastName == "Alonso").ID,
+                     VolunteerID = volunteers.Single(s => s.LastName == "Alonso").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Food pickup" ).JobID,
                      EnrollmentDate = DateTime.Parse("2012-09-01").Date,
                  },
                  new Enrollment {
-                     VolunteerID = volunteers.Single(s => s.LastName == "Alonso").ID,
+                     VolunteerID = volunteers.Single(s => s.LastName == "Alonso").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Fundraising/grant writing" ).JobID,
                     EnrollmentDate = DateTime.Parse("2012-09-01").Date,
                  },
                  new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Alonso").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Alonso").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Volunteer coordination" ).JobID,
                    EnrollmentDate = DateTime.Parse("2011-09-01").Date,
                  },
                  new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Anand").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Anand").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Newsletter production" ).JobID
                  },
                  new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Anand").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Anand").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Volunteer coordination").JobID,
-                    //Grade = Grade.B
                  },
                 new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Barzdukas").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Barzdukas").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Volunteer coordination").JobID,
                        EnrollmentDate = DateTime.Parse("2013-09-01").Date,
                  },
                  new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Li").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Li").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Food pickup").JobID,
                   
                  },
                  new Enrollment {
-                    VolunteerID = volunteers.Single(s => s.LastName == "Justice").ID,
+                    VolunteerID = volunteers.Single(s => s.LastName == "Justice").VolunteerID,
                     JobID = jobs.Single(c => c.Title == "Food pickup").JobID,
                      EnrollmentDate = DateTime.Parse("2005-08-11").Date,
                  }
@@ -113,14 +112,41 @@ namespace VolunteerSystem.Migrations
             {
                 var enrollmentInDataBase = context.Enrollments.Where(
                     s =>
-                         s.Volunteer.ID == e.VolunteerID &&
-                         s.Job.JobID == e.JobID).SingleOrDefault();
+                         s.Volunteers.VolunteerID == e.VolunteerID &&
+                         s.Jobs.JobID == e.JobID).SingleOrDefault();
                 if (enrollmentInDataBase == null)
                 {
                     context.Enrollments.Add(e);
                 }
             }
             context.SaveChanges();
+
+
+            //var events = new List<Event>
+            //{
+            //    new Event {
+            //        VolunteerID = volunteers.Single(s => s.LastName == "Alexander").VolunteerID,
+            //        JobID = jobs.Single(c => c.Title == "Administration" ).JobID,
+            //        EventName = "Eloise's Cooking Pot",
+            //        Date = DateTime.Parse("2012-09-01").Date,
+
+            //    },
+                
+            //};
+
+            //foreach (Event e in events)
+            //{
+            //    var eventInDataBase = context.Events.Where(
+            //        s =>
+            //             s.Volunteers.VolunteerID == e.VolunteerID &&
+            //             s.Jobs.JobID == e.JobID).SingleOrDefault();
+            //    if (eventInDataBase == null)
+            //    {
+            //        context.Events.Add(e);
+            //    }
+            //}
+            //context.SaveChanges();
         }
+
     }
 }

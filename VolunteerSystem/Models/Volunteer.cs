@@ -7,7 +7,9 @@ namespace VolunteerSystem.Models
 {
     public class Volunteer
     {
-        public int ID { get; set; }
+       
+
+        public int VolunteerID { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -19,11 +21,16 @@ namespace VolunteerSystem.Models
         [Column("FirstName")]
         [Display(Name = "First Name")]
         public string FirstMidName { get; set; }
+
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime BirthDate { get; set; }
+
         public string PhoneNumber { get; set; }
+
         public string Email { get; set; }
+
         public virtual ICollection<Enrollment> Enrollments { get; set; }
+       
     }
 }

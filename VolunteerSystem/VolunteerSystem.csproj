@@ -234,9 +234,22 @@
     <Compile Include="Migrations\201802150525405_adddescription.Designer.cs">
       <DependentUpon>201802150525405_adddescription.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802150611111_addevent.cs" />
+    <Compile Include="Migrations\201802150611111_addevent.Designer.cs">
+      <DependentUpon>201802150611111_addevent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150617597_addekey.cs" />
+    <Compile Include="Migrations\201802150617597_addekey.Designer.cs">
+      <DependentUpon>201802150617597_addekey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150637094_dropcolumn.cs" />
+    <Compile Include="Migrations\201802150637094_dropcolumn.Designer.cs">
+      <DependentUpon>201802150637094_dropcolumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Job.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -351,6 +364,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802150525405_adddescription.resx">
       <DependentUpon>201802150525405_adddescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150611111_addevent.resx">
+      <DependentUpon>201802150611111_addevent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150617597_addekey.resx">
+      <DependentUpon>201802150617597_addekey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150637094_dropcolumn.resx">
+      <DependentUpon>201802150637094_dropcolumn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
