@@ -23,7 +23,7 @@ namespace VolunteerSystem.Models
         public string FirstMidName { get; set; }
 
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime BirthDate { get; set; }
 
         public string PhoneNumber { get; set; }
@@ -31,6 +31,7 @@ namespace VolunteerSystem.Models
         public string Email { get; set; }
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
-       
+        public virtual ICollection<Event> Events { get; set; }
+
     }
 }

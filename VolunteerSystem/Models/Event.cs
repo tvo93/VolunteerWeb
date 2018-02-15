@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
+using System;
 namespace VolunteerSystem.Models
 {
     public class Event
@@ -8,9 +9,7 @@ namespace VolunteerSystem.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int EventID { get; set; }
 
-        // foreign key
-        public int JobID { get; set; }
-        public int VolunteerID { get; set; }
+      
 
         [Required]
         [StringLength(50)]
@@ -21,14 +20,15 @@ namespace VolunteerSystem.Models
       
         [Required]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Date")]
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
 
-        public virtual Job Jobs { get; set; }
+        public virtual Job Job { get; set; }
      
-        public virtual Volunteer Volunteers { get; set; }
+        public virtual Volunteer Volunteer { get; set; }
 
         public virtual ICollection<Event> Events { get; set; }
+      //  public virtual ICollection<Volunteer> Volunteers { get; set; }
     }
 }

@@ -29,9 +29,15 @@ textarea {
     
 }
 
-.welcome {     
+.welcome {   
+    color:blue;
     text-align: center;
     font-size: 20px;
+}
+
+
+.paragraph {
+    font-size: 16px;
 }
 
 .row {
@@ -45,8 +51,8 @@ textarea {
 }
 
 .navbar-inverse{
-    background-color: white;
-    border-color: white;
+    background-color: black;
+    border-color: red;
     height: 120px;
     font-size: 15px;    
 }

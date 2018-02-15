@@ -229,7 +229,6 @@ C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\bin\Microsoft.AI.DependencyC
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\bin\Microsoft.AI.Web.xml
-C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.csprojResolveAssemblyReference.cache
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.initialcreate.resources
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.birthdate.resources
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.enrollmentdate.resources
@@ -243,3 +242,9 @@ C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.pd
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.addevent.resources
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.addekey.resources
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.dropcolumn.resources
+C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.addchange.resources
+C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.addeventdata.resources
+C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.angryupdate.resources
+C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.nothing.resources
+C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.nothing1.resources
+C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.notfun.resources

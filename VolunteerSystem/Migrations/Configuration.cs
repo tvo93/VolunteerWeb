@@ -112,8 +112,8 @@ namespace VolunteerSystem.Migrations
             {
                 var enrollmentInDataBase = context.Enrollments.Where(
                     s =>
-                         s.Volunteers.VolunteerID == e.VolunteerID &&
-                         s.Jobs.JobID == e.JobID).SingleOrDefault();
+                         s.Volunteer.VolunteerID == e.VolunteerID &&
+                         s.Job.JobID == e.JobID).SingleOrDefault();
                 if (enrollmentInDataBase == null)
                 {
                     context.Enrollments.Add(e);
@@ -121,31 +121,22 @@ namespace VolunteerSystem.Migrations
             }
             context.SaveChanges();
 
+            var events = new List<Event>
+            {
+                new Event {EventID = 100,    
+                    EventName = "Eloise's Cooking Pot",
+                    Date = DateTime.Parse("2018-02-01").Date,
+                },
+                 new Event {EventID = 101,   
+                    EventName = "Eloise's Cooking Pot",
+                    Date = DateTime.Parse("2018-02-28").Date,
+                },
 
-            //var events = new List<Event>
-            //{
-            //    new Event {
-            //        VolunteerID = volunteers.Single(s => s.LastName == "Alexander").VolunteerID,
-            //        JobID = jobs.Single(c => c.Title == "Administration" ).JobID,
-            //        EventName = "Eloise's Cooking Pot",
-            //        Date = DateTime.Parse("2012-09-01").Date,
+            };
+            events.ForEach(s => context.Events.AddOrUpdate(p => p.EventID, s));
 
-            //    },
-                
-            //};
+            context.SaveChanges();
 
-            //foreach (Event e in events)
-            //{
-            //    var eventInDataBase = context.Events.Where(
-            //        s =>
-            //             s.Volunteers.VolunteerID == e.VolunteerID &&
-            //             s.Jobs.JobID == e.JobID).SingleOrDefault();
-            //    if (eventInDataBase == null)
-            //    {
-            //        context.Events.Add(e);
-            //    }
-            //}
-            //context.SaveChanges();
         }
 
     }

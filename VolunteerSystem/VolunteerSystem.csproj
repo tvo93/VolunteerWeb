@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JobController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -245,6 +246,30 @@
     <Compile Include="Migrations\201802150637094_dropcolumn.cs" />
     <Compile Include="Migrations\201802150637094_dropcolumn.Designer.cs">
       <DependentUpon>201802150637094_dropcolumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150649176_addchange.cs" />
+    <Compile Include="Migrations\201802150649176_addchange.Designer.cs">
+      <DependentUpon>201802150649176_addchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150706161_addeventdata.cs" />
+    <Compile Include="Migrations\201802150706161_addeventdata.Designer.cs">
+      <DependentUpon>201802150706161_addeventdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150716066_angryupdate.cs" />
+    <Compile Include="Migrations\201802150716066_angryupdate.Designer.cs">
+      <DependentUpon>201802150716066_angryupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150720336_nothing.cs" />
+    <Compile Include="Migrations\201802150720336_nothing.Designer.cs">
+      <DependentUpon>201802150720336_nothing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150727173_nothing1.cs" />
+    <Compile Include="Migrations\201802150727173_nothing1.Designer.cs">
+      <DependentUpon>201802150727173_nothing1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802150757025_notfun.cs" />
+    <Compile Include="Migrations\201802150757025_notfun.Designer.cs">
+      <DependentUpon>201802150757025_notfun.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -329,6 +354,11 @@
     <Content Include="Views\Job\Details.cshtml" />
     <Content Include="Views\Job\Edit.cshtml" />
     <Content Include="Views\Job\Index.cshtml" />
+    <Content Include="Views\Event\Create.cshtml" />
+    <Content Include="Views\Event\Delete.cshtml" />
+    <Content Include="Views\Event\Details.cshtml" />
+    <Content Include="Views\Event\Edit.cshtml" />
+    <Content Include="Views\Event\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -373,6 +403,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802150637094_dropcolumn.resx">
       <DependentUpon>201802150637094_dropcolumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150649176_addchange.resx">
+      <DependentUpon>201802150649176_addchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150706161_addeventdata.resx">
+      <DependentUpon>201802150706161_addeventdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150716066_angryupdate.resx">
+      <DependentUpon>201802150716066_angryupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150720336_nothing.resx">
+      <DependentUpon>201802150720336_nothing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150727173_nothing1.resx">
+      <DependentUpon>201802150727173_nothing1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802150757025_notfun.resx">
+      <DependentUpon>201802150757025_notfun.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

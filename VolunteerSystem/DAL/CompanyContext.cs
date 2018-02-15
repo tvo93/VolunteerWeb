@@ -19,7 +19,11 @@ namespace VolunteerSystem.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
             {
                 modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-           
+            //modelBuilder.Entity<Event>()
+            // .HasMany(c => c.Volunteers).WithMany(i => i.Events)
+            // .Map(t => t.MapLeftKey("EventID")
+            //     .MapRightKey("VolunteerID")
+            //     .ToTable("EventVolunteer"));
         }
         }
 }
