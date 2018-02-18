@@ -248,4 +248,4 @@ C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Mi
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.nothing.resources
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.nothing1.resources
 C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.notfun.resources
-C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.csprojResolveAssemblyReference.cache
+C:\Users\nhocw\Desktop\VolunteerWeb\VolunteerSystem\obj\Debug\VolunteerSystem.Migrations.data.resources

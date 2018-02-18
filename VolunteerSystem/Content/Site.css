@@ -43,10 +43,10 @@ textarea {
 .row {
     padding-top: 30px;
     height: 400px; 
-    background-image: url("/Content/Images/apples-background2.jpg");
+  
     margin-right: 5px;
     margin-left: 5px;   
-    color: white;
+    color: skyblue;
     text-align: center;
 }
 
