@@ -9,15 +9,11 @@ namespace VolunteerSystem.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int EventID { get; set; }
 
-      
-
         [Required]
         [StringLength(50)]
         [Display(Name = "Event Name")]
         public string EventName { get; set; }
 
-      
-      
         [Required]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]

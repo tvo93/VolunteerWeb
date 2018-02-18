@@ -91,6 +91,7 @@ namespace VolunteerSystem.Controllers
             }
         }
 
+
         //
         // GET: /Account/VerifyCode
         [AllowAnonymous]
@@ -422,7 +423,6 @@ namespace VolunteerSystem.Controllers
 
             base.Dispose(disposing);
         }
-
         #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
