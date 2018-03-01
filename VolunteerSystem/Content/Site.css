@@ -1,38 +1,19 @@
 body {
-    padding-top: 100px;    
+    padding-top: 100px;
     padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
-.row .col-md-2 {   
-    margin-left: 30px;
+    background-color: #D3D3D3;
     margin-top: 50px;
-    
 }
 
-.welcome {   
-    color:blue;
+.welcome {
+    color: blue;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;   
+}
+.wel-title {
+    font-size: 35px;
+    color: #DC143C;
+    font-weight: bold;
 }
 
 
@@ -42,17 +23,33 @@ textarea {
 
 .row {
     padding-top: 30px;
-    height: 400px; 
-  
+    height: 500px;
     margin-right: 5px;
-    margin-left: 5px;   
+    margin-left: 5px;
     color: skyblue;
     text-align: center;
+    background-color: #A0522D;
+}
+
+.row2{
+    margin-left: 5px;
+    background-color: white; 
+    font-size: 20px;
 }
 
 .navbar-inverse{
-    background-color: black;
-    border-color: red;
-    height: 120px;
-    font-size: 15px;    
+    background-color: #ffffff;  
+    height: 80px;
+    font-size: 25px;      
 }
+.logo{
+    width: 50px;
+}
+
+.footer{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+

@@ -311,11 +311,11 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.428571429;
+    color: #333333;
+    background-color: #C0C0C0;
 }
 
 input,
@@ -335,13 +335,13 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: red;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: white;
   text-decoration: underline;
 }
 
@@ -927,6 +927,7 @@ pre code {
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
+    height:auto;
   }
   .col-sm-1,
   .col-sm-2,
@@ -952,6 +953,7 @@ pre code {
   }
   .col-sm-4 {
     width: 33.33333333333333%;
+    
   }
   .col-sm-5 {
     width: 41.66666666666667%;
@@ -1099,13 +1101,17 @@ pre code {
     width: 8.333333333333332%;
   }
   .col-md-2 {
-    width: 16.666666666666664%;
+    width: 20%;
+    padding-top: 60px;
   }
   .col-md-3 {
     width: 25%;
   }
   .col-md-4 {
     width: 33.33333333333333%;
+    background-color:white;
+    height: 300px;
+    font-size: 20px;
   }
   .col-md-5 {
     width: 41.66666666666667%;
@@ -1117,8 +1123,10 @@ pre code {
     width: 58.333333333333336%;
   }
   .col-md-8 {
-    width: 66.66666666666666%
-    ;
+    width: 66.66666666666666%;
+    background-color: white;
+    height: 300px;
+    padding-top: 20px;
   }
   .col-md-9 {
     width: 75%;
@@ -1244,7 +1252,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 100%;
   }
   .col-lg-1,
   .col-lg-2,
@@ -1429,6 +1437,8 @@ th {
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #dddddd;
+  background-color: black;
+  color: white;
 }
 
 .table thead > tr > th {
@@ -4152,8 +4162,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .container > .navbar-header,
   .container > .navbar-collapse {
-    margin-right: 0;
+    margin-right: 70px;
     margin-left: 0;
+   
   }
 }
 
@@ -4507,27 +4518,30 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: #ba2323;
+  font-size: 35px;
+  font-family: Arial;
+  font-weight: bold;
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
+  color: #0033ff;
   background-color: transparent;
 }
 
 .navbar-inverse .navbar-text {
   color: #999999;
 }
-
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: #333333;
 }
 
+/* style for menu bar of Home page */
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: transparent;
+  color: #0066ff;
+  background-color: transparent;  
 }
 
 .navbar-inverse .navbar-nav > .active > a,
